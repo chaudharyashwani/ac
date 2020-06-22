@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AC Calculator</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">AC Calculator</a>
+  <ul class="navbar-nav "  >
+    <li class="nav-item">
+      <a class="nav-link" href="guide.php">Buy Guide</a>
+    </li>
+  </button>
+  </ul>
+
+  ...
+</nav>
+	</div>
+<br>
+	<div class="img" align="center" >
+		<img src="ac.png">
+</div>
+	</div>
+	<div>
+		<form oninput="x.value=parseFloat(a.value)*parseFloat(b.value)*parseFloat(c.value)">
+			<br>
+			<h1 class="container" align="center">Select Your Product Specifications </h1>
+			<hr>
+			<div class="form-group container">
+				<label for="formControlRange">Rate your AC</label>
+				<input type="range" class="form-control-range" id="formControlRange">
+			</div>
+			<select class="form-control container">
+				<option>Split AC</option>
+				<option>Window AC</option>
+			</select>
+			<br>
+			<select class="form-control container">
+				<option>Product Company</option>
+				<option>Haier</option>
+				<option>Daikin</option>
+				<option>Voltas</option>
+				<option>LG</option>
+				<option>Mitsubishi ELectric</option>
+				<option>Blue Star</option>
+				<option>Hitachi</option>
+				<option>O General</option>
+				<option>Samsung</option>
+				<option>Carrier</option>
+			</select>
+			<br>
+			<select class="form-control container">
+				<option>Star Rating</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+			</select>
+			<br>
+			
+			<div class="container">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Capacity</label>
+					<input type="email" class="form-control" id="a" aria-describedby="emailHelp">
+					<small id="emailHelp" class="form-text text-muted">Please enter the capacity in ton</small>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Electricity Rate</label>
+					<input type="email" class="form-control" id="b" aria-describedby="emailHelp">
+					<small id="emailHelp" class="form-text text-muted">Please enter the electricity Rate in Indian rupee </small>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Number of Hour you want to turn on your AC</label>
+					<input type="email" class="form-control" id="c" aria-describedby="emailHelp">
+				</div>
+			</div>
+			<div class="container p-3 my-3 bg-dark text-white">
+				<h1 align="center" > Total Amount</h1>
+				<div class="container" align="center">
+					<h1>
+					<output name="x" for="a b c" class="container"></output>
+				</h1>
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+</body>
+</html>
